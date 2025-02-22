@@ -1,3 +1,8 @@
+const refs = {
+    btnStart : document.querySelector('[data-start]'),
+    inputData : document.querySelector('#datetime-picker')
+}
+
 // const options = {
 //     enableTime: true,
 //     time_24hr: true,
