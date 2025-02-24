@@ -1,0 +1,67 @@
+body {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2e2f42;
+  margin-left: 156px;
+  margin-top: 36px;
+}
+
+.form {
+  max-width: 360px;
+}
+
+label {
+}
+
+input[type="number"] {
+  width: 358px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  display: grid;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+fieldset {
+  width: 358px;
+  height: 64px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  margin: 0;
+  padding: 0px;
+  margin-bottom: 24px;
+}
+
+legend{
+    margin-left: 28px;
+}
+
+input[type="radio"] {
+    margin-left: 54px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #757575;
+}
+
+button {
+  width: 360px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #4e75ff;
+  background-color: #4e75ff;
+  color: #ffffff;
+  padding: 0px;
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+button:hover {
+  border: 1px solid #6c8cff;
+  background-color: #6c8cff;
+}
