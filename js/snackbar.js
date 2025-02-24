@@ -1,38 +1,39 @@
 const refs = {
   form: document.querySelector(".form"),
   delay: document.querySelector('input[name="delay"]'),
-  inputFulfilled: document.querySelector("input[value=fulfilled]"),
-  inputRejected: document.querySelector("input[value=rejected]"),
-  btnSubmit: document.querySelector('button[type="submit"]'),
 };
-// console.dir(refs.inputFulfilled.checked);
-// console.dir(refs.inputRejected.checked);
-
-// let delayValue = Number(refs.delay.value);
 
 refs.form.addEventListener("submit", (e) => {
   e.preventDefault();
   let delayValue = Number(refs.delay.value);
-  console.log(delayValue);
-  console.dir(refs.inputFulfilled.checked);
-  console.dir(refs.inputRejected.checked);
+  const btnState = document.querySelector('input[name="state"]:checked').value;
 
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
-      if (refs.inputFulfilled.checked = true) {
+      if (btnState === "fulfilled") {
         resolve(delayValue);
       } else {
         reject(delayValue);
-      } 
+      }
     }, delayValue);
   });
 
   promise
     .then((delayValue) => {
-      console.log(`✅ Fulfilled promise in ${delayValue} ms`);
+      iziToast.success({
+        message: `Fulfilled promise in ${delayValue} ms`,
+        position: "topRight",
+        backgroundColor: "#59A10D",
+        messageColor: "white",
+      });
     })
     .catch((delayValue) => {
-      console.log(`❌ Rejected promise in ${delayValue} ms`);
+      iziToast.error({
+        message: `Rejected promise in ${delayValue} ms`,
+        position: "topRight",
+        backgroundColor: "#EF4040",
+        messageColor: "white",
+      });
     });
 
   e.target.reset();
