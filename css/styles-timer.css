@@ -1,0 +1,66 @@
+body {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2e2f42;
+  margin-left: 156px;
+  margin-top: 36px;
+}
+
+input {
+  width: 254px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  margin-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 0px;
+  color: #2e2f42;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+button {
+  width: 75px;
+  height: 40px;
+  padding: 0px;
+  border-radius: 8px;
+  border-style: inherit;
+  background-color: #cfcfcf;
+  color: #989898;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #4e75ff;
+  color: #ffffff;
+}
+
+.timer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.field {
+  display: grid;
+}
+
+.value {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.label {
+  text-transform: uppercase;
+  text-align: center;
+}
+
